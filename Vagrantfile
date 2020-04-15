@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vagrant1.vm.box = "ubuntu/trusty64"
 #     vagrant1.vm.network "forwarded_port", guest: 80, host: 8080
 #     vagrant1.vm.network "forwarded_port", guest: 443, host: 8443
-    vagrant1.vm.network :private_network, ip: "10.1.98.105"
+    vagrant1.vm.network :private_network, ip: "192.168.4.16"
     vagrant1.vm.provider "virtualbox" do |vb|
           vb.customize ["modifyvm", :id, "--cpus", 1]
           vb.customize ["modifyvm", :id, "--memory", 512]
