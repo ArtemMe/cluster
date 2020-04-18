@@ -1,2 +1,3 @@
 rootProject.name = 'spring-cloud-example-a'
+include 'server_new'
 

@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+  application:
+    name: movie-service
+
+server:
+  port: ${PORT:8090}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    healthcheck:
+      enabled: false
+  instance:
+    preferIpAddress: true
