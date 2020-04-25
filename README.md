@@ -21,3 +21,6 @@ https://github.com/devopsgroup-io/vagrant-hostmanager
   config.hostmanager.include_offline = true
 
 ```
+
+## day 4 
+Накатить на машинки инфру, nginx + конфиги к нему, docker с приложухами
