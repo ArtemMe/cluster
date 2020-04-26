@@ -1,5 +1,9 @@
 ---
-- name: show return value of apt module
+# ==========
+#  Nginx
+# ==========
+
+- name:
   hosts: server1
   gather_facts: False
   become: True
@@ -8,3 +12,30 @@
       apt: name=nginx
       register: result
     - debug: var=result
+
+- hosts: server1
+  become: yes
+  tasks:
+    - name: copy config
+      template:
+        src: "../templates/nginx/very_simple_config.conf"
+        dest: "/etc/nginx/sites-available/"
+        backup: yes
+    - name: create symlink
+      file:
+        src: "/etc/nginx/sites-available/very_simple_config.conf"
+        dest: "/etc/nginx/sites-enabled/default"
+        state: link
+    - name: create dir /data/images
+      file:
+        path: "/data/images"
+        state: directory
+    - name: copy the content of the web site
+      copy:
+        src: "../templates/nginx/dog_and_code.png"
+        dest: "/data/images"
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+      become: yes

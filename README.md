@@ -24,3 +24,11 @@ https://github.com/devopsgroup-io/vagrant-hostmanager
 
 ## day 4 
 Накатить на машинки инфру, nginx + конфиги к нему, docker с приложухами
+
+По nginx. 
+Конфиги кладем сюда `/etc/nginx/sites-available/`     
+Далее есть диерктория с текущеми настройками `/etc/nginx/sites-enabled`
+Отсюда nginx берет настройки все конифги.    
+В настройках делаем финт ушами и создаем ссылку с `/etc/nginx/sites-enabled/default` на наш конфиг `/etc/nginx/sites-available/very_simple_config.conf` поэтому дефолтным становится наш конифг
+В конфигах есть команда `root /data/xxxx` указывает рутовую директорию для всех файлом используемых в конфиге
+В данный момент создал просто в корне файловой системы папки `/data/images` куда сложил картнки таким образом можем получать картинки по пути `http://192.168.4.10/images/dog_and_code.png` 
