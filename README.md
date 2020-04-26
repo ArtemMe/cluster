@@ -36,3 +36,10 @@ https://github.com/devopsgroup-io/vagrant-hostmanager
 поэтому дефолтным становится наш конифг.      
 В конфигах есть команда `root /data/xxxx` указывает рутовую директорию для всех файлом используемых в конфиге.      
 В данный момент создал просто в корне файловой системы папки `/data/images` куда сложил картнки таким образом можем получать картинки по пути `http://192.168.4.10/images/dog_and_code.png`    
+
+
+Сайты которые помогли:
+https://code-maven.com/install-and-configure-nginx-using-ansible.    
+https://stackoverflow.com/questions/18954827/how-to-serve-images-with-nginx.   
+https://code-maven.com/install-and-configure-nginx-using-ansible.    
+https://nginx.org/ru/docs/beginners_guide.html.   
