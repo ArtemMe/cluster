@@ -57,6 +57,9 @@ https://nginx.org/ru/docs/beginners_guide.html.
 
 //TODO
 
+### Jenkins
+
+//TODO CI/CD и тому подобная хрень
 
 ## day 5.      
 
