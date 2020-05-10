@@ -25,7 +25,7 @@ https://github.com/devopsgroup-io/vagrant-hostmanager
 ## day 4 
 Накатить на машинки инфру, nginx + конфиги к нему, docker с приложухами
 
-По nginx. 
+### По nginx. 
 Конфиги кладем сюда ```/etc/nginx/sites-available/```     
 Далее есть диерктория с текущеми настройками     
 `/etc/nginx/sites-enabled` - Отсюда nginx берет настройки все конифги.       
@@ -43,3 +43,23 @@ https://code-maven.com/install-and-configure-nginx-using-ansible.
 https://stackoverflow.com/questions/18954827/how-to-serve-images-with-nginx.   
 https://code-maven.com/install-and-configure-nginx-using-ansible.    
 https://nginx.org/ru/docs/beginners_guide.html.   
+
+### Приложухи с docker
+
+//TODO
+
+### Mongo db
+
+/TODO
+
+
+### Kafka
+
+//TODO
+
+
+## day 5.      
+
+### Настроить в приложение работу с монгой
+
+
